@@ -1,0 +1,2 @@
+AI Prompt for (Registration Form):
+"Please add a modern Workshop Registration Form section before the footer. Create a two-column grid: on the left, a subtle card highlighting workshop perks (limited seats, certificates), and on the right, a clean form with inputs for Full Name, Email, GitHub Handle, and a custom select dropdown for Tech Track. Style the primary submit button to match our royal blue button style."
