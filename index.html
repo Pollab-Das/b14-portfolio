@@ -18,18 +18,19 @@
             <a href="#home" class="active"><i class="fa-solid fa-house"></i></a>
             <a href="#about"><i class="fa-solid fa-user"></i></a>
             <a href="#skills"><i class="fa-solid fa-code"></i></a>
+            <a href="#projects"><i class="fa-solid fa-briefcase"></i></a>
             <a href="#education"><i class="fa-solid fa-graduation-cap"></i></a>
+            <a href="#experience"><i class="fa-solid fa-building"></i></a>
             <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
         </div>
     </nav>
 
     <!-- Top Right Social Links & Theme Toggle -->
     <div class="top-socials">
-        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://github.com/Pollab-Das" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://wa.me/8801741735802" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
         <!-- Theme Toggle Button -->
         <button class="theme-toggle" aria-label="Toggle Theme">
             <i class="fa-solid fa-sun"></i>
@@ -41,7 +42,7 @@
         <section id="home" class="hero">
             <div class="hero-content">
                 <div class="tagline">
-                    <span>👋 Hey, I'm</span>  <span> ✨</span>
+                    <span>👋 Hey, I'm Pollab Das</span> <span> ✨</span>
                 </div>
                 <h1 class="name-title">Pollab <span class="accent">Das</span></h1>
                 <h2 class="role">Full Stack Developer</h2>
@@ -49,23 +50,22 @@
                     Building scalable, production-grade web applications — from pixel-perfect interfaces to robust backend systems and server deployments.
                 </p>
                 <div class="cta-buttons">
-                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-download"></i> Download Resume</a>
-                    <a href="#" class="btn btn-outline">View Projects <i class="fa-solid fa-chevron-right"></i></a>
+                    <a href="assets/resume.pdf" download class="btn btn-primary"><i class="fa-solid fa-download"></i> Download Resume</a>
+                    <a href="#projects" class="btn btn-outline">View Projects <i class="fa-solid fa-chevron-right"></i></a>
                 </div>
+                <!-- Social Links Embedded in Hero -->
                 <div class="project-tags">
-                    <span class="tag red-tag"><i class="fa-brands fa-youtube"></i> Bug Fix Pro <i class="fa-solid fa-chevron-right"></i></span>
-                    <span class="tag dark-tag"><i class="fa-solid fa-circle"></i> DevNotes ↗</span>
-                    <span class="tag dark-tag"><i class="fa-solid fa-circle"></i> BugFixer ↗</span>
+                    <a href="https://github.com/Pollab-Das" target="_blank" class="tag dark-tag"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" class="tag dark-tag"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://wa.me/8801741735802" target="_blank" class="tag red-tag"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="image-wrapper">
-                    <!-- এখানে আপনার নিজের ছবি দিন -->
-                    <img src="image/pro.jpg.jpeg" alt="Abdullah Al Monir">
+                    <img src="image/pro.jpg.jpeg" alt="Pollab Das">
                     <div class="status-badge">
                         <span class="dot"></span> OPEN TO WORK
                     </div>
-                    <div class="floating-icon icon1"><i class="fa-solid fa-code"></i></div>
                 </div>
             </div>
         </section>
@@ -79,23 +79,23 @@
                     <p>I'm Pollab, a full stack developer from Sylhet who probably has too many browser tabs open right now. I genuinely love this stuff - not just the building part, but the exploring, the breaking things, the "why is this not working at 2am" part too.</p>
                     <p>Previously crafted web apps at <span class="accent">Everything Green Limited</span>, and currently open to exciting full-time or contract opportunities while living inside Next.js, PostgreSQL, and Prisma.</p>
                     <p>New framework just dropped? I'm already reading the docs. That's just how I'm wired. And since 2018, teaching has been part of the ride too — helping someone fix a bug they've been stuck on for hours, or watching a concept finally click for them? That <span class="accent">never gets old</span>.</p>
+                    
                     <div class="stats">
-                        <!-- <div class="stat-item">
-                            <h3>2+</h3>
+                        <div class="stat-item">
+                            <h3></h3>
                             <p>YEARS EXP</p>
                         </div>
                         <div class="stat-item">
-                            <h3>30+</h3>
+                            <h3>2+</h3>
                             <p>PROJECTS</p>
                         </div>
                         <div class="stat-item">
                             <h3>MERN</h3>
-                            <p>STACK PRO</p> -->
+                            <p>STACK PRO</p>
                         </div>
                     </div>
                 </div>
                 <div class="about-image-card">
-                    <!-- এখানে About সেকশনের জন্য আপনার আরেকটি ছবি দিন -->
                     <img src="image/about.jpeg" alt="About Pollab">
                     <div class="image-badge">Pollab Das ✨</div>
                 </div>
@@ -159,6 +159,40 @@
             </div>
         </section>
 
+        <!-- Projects Section (Main Requirement) -->
+        <section id="projects" class="section">
+            <h2 class="section-title">MY PROJECTS</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="image/bazardor.jpg" alt="BazarDor">
+                    </div>
+                    <h4>BazarDor</h4>
+                    <p>A full-stack Next.js app for tracking Bangladeshi market prices with BetterAuth, MongoDB, and real-time price tracking.</p>
+                    <a href="project-details.html?id=1" class="btn btn-outline full-width">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="image/fitlog.jpg" alt="FitLog">
+                    </div>
+                    <h4>FitLog</h4>
+                    <p>Fitness tracking app with workout logging, progress charts, and personalized recommendations built with React and Node.js.</p>
+                    <a href="project-details.html?id=2" class="btn btn-outline full-width">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="image/devnotes.jpg" alt="DevNotes">
+                    </div>
+                    <h4>DevNotes</h4>
+                    <p>A blog platform for developers with Markdown support, syntax highlighting, and a clean reading experience.</p>
+                    <a href="project-details.html?id=3" class="btn btn-outline full-width">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
         <!-- Education Section -->
         <section id="education" class="section">
             <h2 class="section-title">MY EDUCATION JOURNEY</h2>
@@ -194,6 +228,29 @@
             </div>
         </section>
 
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <h2 class="section-title">EXPERIENCE</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="date"><i class="fa-solid fa-calendar"></i> 2024 - Present</span>
+                        <h3>Freelance Full Stack Developer</h3>
+                        <p class="institution">Self-employed</p>
+                        <p class="exp-desc">Built 10+ production-grade web applications using Next.js, MongoDB, and BetterAuth. Collaborated with clients to deliver responsive, scalable solutions.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="date"><i class="fa-solid fa-calendar"></i> 2023 - 2024</span>
+                        <h3>Junior Frontend Developer</h3>
+                        <p class="institution">Tech Startup</p>
+                        <p class="exp-desc">Developed pixel-perfect UI components with React and Tailwind CSS. Improved website performance by 40% through code splitting and optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="section">
             <h2 class="section-title">CONTACT ME</h2>
@@ -202,11 +259,17 @@
                     <i class="fa-solid fa-rocket rocket-icon"></i>
                     <h3>Let's build something <span class="accent">amazing together</span></h3>
                     <p>Whether you have a project idea, a job opportunity, or just want to say hi — my inbox is always open.</p>
-                    <p class="response-time"><i class="fa-solid fa-bolt"></i> Typically responds within 24 hours</p>
+                    
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:pollabdasprince@gmail.com">pollabdasprince@gmail.com</a></li>
+                        <li><i class="fa-solid fa-phone"></i> <a href="tel:+8801741735802">+880 1741 735802</a></li>
+                        <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/8801741735802" target="_blank">+880 1741 735802</a></li>
+                    </ul>
+
                     <div class="contact-socials">
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://github.com/Pollab-Das" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                     </div>
                 </div>
                 
@@ -230,30 +293,10 @@
                     </form>
                 </div>
             </div>
-
-            <!-- Other Projects -->
-            <h3 class="other-projects-title">Other things I've built</h3>
-            <p class="other-projects-subtitle">A couple of side projects that live outside this portfolio, still running, still getting updated.</p>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <span class="tag dark-tag">Notebook</span>
-                    <h4>DevNotes</h4>
-                    <p>Free, structured notes on HTML, CSS, JavaScript, React and more — written in English and বাংলা.</p>
-                    <a href="#" class="project-link">notebook.com <span>Visit ></span></a>
-                </div>
-                <div class="project-card">
-                    <span class="tag red-tag">Error Fixer</span>
-                    <h4>BugFixer</h4>
-                    <p>Tested fixes for the Next.js, Prisma, PostgreSQL and Express errors that stop you cold at 2am.</p>
-                    <a href="#" class="project-link">bugfixer.com <span>Visit ></span></a>
-                </div>
-            </div>
         </section>
 
         <!-- Footer -->
         <footer>
-            <h3 class="section-title">Reach Me Anytime</h3>
             <div class="footer-contact">
                 <div class="footer-item">
                     <i class="fa-solid fa-phone"></i>
@@ -273,26 +316,23 @@
     </main>
 
     <!-- Floating Chat Button -->
-    <a href="#" class="floating-chat">
+    <a href="https://wa.me/8801741735802" target="_blank" class="floating-chat">
         <i class="fa-solid fa-comment-dots"></i>
     </a>
 
-    <!-- Theme Toggle JavaScript -->
+    <!-- Theme Toggle & Active Nav JavaScript -->
     <script>
         const themeToggleBtn = document.querySelector('.theme-toggle');
         const themeIcon = themeToggleBtn.querySelector('i');
         const body = document.body;
 
-        // Check if light mode was previously saved
         if (localStorage.getItem('theme') === 'light') {
             body.classList.add('light-mode');
             themeIcon.classList.replace('fa-sun', 'fa-moon');
         }
 
-        // Toggle theme on button click
         themeToggleBtn.addEventListener('click', () => {
             body.classList.toggle('light-mode');
-            
             if (body.classList.contains('light-mode')) {
                 themeIcon.classList.replace('fa-sun', 'fa-moon');
                 localStorage.setItem('theme', 'light');
@@ -300,6 +340,24 @@
                 themeIcon.classList.replace('fa-moon', 'fa-sun');
                 localStorage.setItem('theme', 'dark');
             }
+        });
+
+        // Active Nav Highlighting
+        const navLinks = document.querySelectorAll('.nav-links a');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
         });
     </script>
 </body>
