@@ -3,247 +3,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev</title>
+    <title>Pollab Das | Full Stack Developer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo-container">
-            <img src="./image/logo.png" alt="Logo" class="navbar-logo">
+    <!-- Left Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="nav-links">
+            <a href="#home" class="active"><i class="fa-solid fa-house"></i></a>
+            <a href="#about"><i class="fa-solid fa-user"></i></a>
+            <a href="#skills"><i class="fa-solid fa-code"></i></a>
+            <a href="#education"><i class="fa-solid fa-graduation-cap"></i></a>
+            <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
         </div>
+    </nav>
 
-        <nav class="nav-menu">
-            <a href="#" class="nav-link">Speakers</a>
-            <a href="#" class="nav-link">Schedule</a>
-            <a href="#" class="nav-link">Tracks</a>
-            <a href="#" class="nav-link">Venue</a>
-            <a href="#" class="nav-link">Blog</a>
-        </nav>
+    <!-- Top Right Social Links & Theme Toggle -->
+    <div class="top-socials">
+        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" aria-label="Toggle Theme">
+            <i class="fa-solid fa-sun"></i>
+        </button>
+    </div>
 
-        <div class="cta-container">
-            <button class="btn-register">Register Now</button>
-        </div>
-    </header>
-
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1 class="hero-title">Code. <span class="italic-text">Connect.</span> Create</h1>
-            <p class="hero-description">
-                Join 4,000+ engineers, founders, and builders at the premier developer 
-                conference of 2026. Three days of cutting-edge talks, hands-on workshops, 
-                and meaningful connections.
-            </p>
-            <button class="hero-btn">Register Now</button>
-        </div>
-    </section>
-
-    <section class="speakers-section">
-        <h2 class="speakers-section-title">Meet the Speakers</h2>
-        
-        <div class="speakers-grid">
-            <div class="speaker-card">
-                <div class="speaker-image-box">
-                    <img src="./image/andrej.png" alt="Andrej Karpathy">
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="tagline">
+                    <span>👋 Hey, I'm</span>  <span> ✨</span>
                 </div>
-                <div class="speaker-info">
-                    <span class="speaker-track">AI / ML</span>
-                    <h3 class="speaker-name">Andrej Karpathy</h3>
-                    <p class="speaker-role">Pretraining team, Anthropic</p>
+                <h1 class="name-title">Pollab <span class="accent">Das</span></h1>
+                <h2 class="role">Full Stack Developer</h2>
+                <p class="description">
+                    Building scalable, production-grade web applications — from pixel-perfect interfaces to robust backend systems and server deployments.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-download"></i> Download Resume</a>
+                    <a href="#" class="btn btn-outline">View Projects <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <div class="project-tags">
+                    <span class="tag red-tag"><i class="fa-brands fa-youtube"></i> Bug Fix Pro <i class="fa-solid fa-chevron-right"></i></span>
+                    <span class="tag dark-tag"><i class="fa-solid fa-circle"></i> DevNotes ↗</span>
+                    <span class="tag dark-tag"><i class="fa-solid fa-circle"></i> BugFixer ↗</span>
                 </div>
             </div>
-
-            <div class="speaker-card">
-                <div class="speaker-image-box">
-                    <img src="./image/demis.png" alt="Demis Hassabis">
-                </div>
-                <div class="speaker-info">
-                    <span class="speaker-track">Cloud & DevOps</span>
-                    <h3 class="speaker-name">Demis Hassabis</h3>
-                    <p class="speaker-role">Co-Founder and CEO, Google DeepMind</p>
-                </div>
-            </div>
-
-            <div class="speaker-card">
-                <div class="speaker-image-box">
-                    <img src="./image/gary.png" alt="Gary Marcus">
-                </div>
-                <div class="speaker-info">
-                    <span class="speaker-track">Frontend</span>
-                    <h3 class="speaker-name">Gary Marcus</h3>
-                    <p class="speaker-role">Staff Engineer, Vercel</p>
-                </div>
-            </div>
-
-            <div class="speaker-card">
-                <div class="speaker-image-box">
-                    <img src="./image/mustafa.png" alt="Mustafa Suleyman">
-                </div>
-                <div class="speaker-info">
-                    <span class="speaker-track">Security</span>
-                    <h3 class="speaker-name">Mustafa Suleyman</h3>
-                    <p class="speaker-role">CEO of Microsoft AI</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="pricing-section">
-        <div class="pricing-header">
-            <h2 class="pricing-section-title">Secure Your Spot</h2>
-            <p class="pricing-section-subtitle">Early-bird pricing ends August 15, 2026.</p>
-        </div>
-
-        <div class="pricing-grid">
-            <div class="pricing-card card-standard">
-                <div class="card-top">
-                    <span class="tier-label">Standard</span>
-                    <div class="price-box">
-                        <span class="currency">$</span><span class="amount">399</span>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <!-- এখানে আপনার নিজের ছবি দিন -->
+                    <img src="image/pro.jpg.jpeg" alt="Abdullah Al Monir">
+                    <div class="status-badge">
+                        <span class="dot"></span> OPEN TO WORK
                     </div>
-                    <span class="per-text">per person</span>
+                    <div class="floating-icon icon1"><i class="fa-solid fa-code"></i></div>
                 </div>
-                <ul class="feature-list">
-                    <li>Access to all 3 conference days</li>
-                    <li>48 curated technical talks</li>
-                    <li>2 workshop sessions</li>
-                    <li>Networking lunch & coffee breaks</li>
-                    <li>Conference swag bag</li>
-                    <li>Digital recordings (30 days)</li>
-                </ul>
-                <button class="btn-tier btn-outline-blue">Get Standard</button>
             </div>
+        </section>
 
-            <div class="pricing-card card-pro">
-                <div class="card-top">
-                    <span class="tier-label">Pro</span>
-                    <div class="price-box">
-                        <span class="currency">$</span><span class="amount">749</span>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2 class="section-title">ABOUT ME</h2>
+            <div class="about-container">
+                <div class="about-text-card">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p>I'm Pollab, a full stack developer from Sylhet who probably has too many browser tabs open right now. I genuinely love this stuff - not just the building part, but the exploring, the breaking things, the "why is this not working at 2am" part too.</p>
+                    <p>Previously crafted web apps at <span class="accent">Everything Green Limited</span>, and currently open to exciting full-time or contract opportunities while living inside Next.js, PostgreSQL, and Prisma.</p>
+                    <p>New framework just dropped? I'm already reading the docs. That's just how I'm wired. And since 2018, teaching has been part of the ride too — helping someone fix a bug they've been stuck on for hours, or watching a concept finally click for them? That <span class="accent">never gets old</span>.</p>
+                    <div class="stats">
+                        <!-- <div class="stat-item">
+                            <h3>2+</h3>
+                            <p>YEARS EXP</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>30+</h3>
+                            <p>PROJECTS</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>MERN</h3>
+                            <p>STACK PRO</p> -->
+                        </div>
                     </div>
-                    <span class="per-text">per person</span>
                 </div>
-                <ul class="feature-list">
-                    <li>Everything in Standard</li>
-                    <li>Unlimited workshop access</li>
-                    <li>Speaker meet & greet</li>
-                    <li>VIP networking dinner</li>
-                    <li>Lifetime recording access</li>
-                    <li>1-on-1 mentorship (30 min)</li>
-                </ul>
-                <button class="btn-tier btn-solid-blue">Get Pro</button>
-            </div>
-
-            <div class="pricing-card card-team">
-                <div class="card-top">
-                    <span class="tier-label">Team</span>
-                    <div class="price-box">
-                        <span class="currency">$</span><span class="amount">5,999</span>
-                    </div>
-                    <span class="per-text">up to 10 people</span>
+                <div class="about-image-card">
+                    <!-- এখানে About সেকশনের জন্য আপনার আরেকটি ছবি দিন -->
+                    <img src="image/about.jpeg" alt="About Pollab">
+                    <div class="image-badge">Pollab Das ✨</div>
                 </div>
-                <ul class="feature-list">
-                    <li>Everything in Pro (10 seats)</li>
-                    <li>Dedicated team lounge access</li>
-                    <li>Private workshop booking</li>
-                    <li>Company logo on event page</li>
-                    <li>Recruitment booth (1 day)</li>
-                    <li>Priority customer support</li>
-                </ul>
-                <button class="btn-tier btn-outline-dark">Contact Us</button>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="registration-section">
-        <div class="registration-container">
-            <div class="registration-perks">
-                <div class="perks-badge">WORKSHOPS</div>
-                <h2 class="perks-title">Level Up Your Engineering Skills</h2>
-                <p class="perks-desc">Dive deep into highly interactive, practical learning environments led directly by elite world-class maintainers and industry experts.</p>
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">MY SKILLS</h2>
+            <div class="skills-grid">
                 
-                <ul class="perks-list">
-                    <li>
-                        <span class="check-icon">✓</span>
-                        <div>
-                            <strong>Limited Seats Available</strong>
-                            <p>Small group cohorts ensuring 1-on-1 environment mentoring guidelines.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="check-icon">✓</span>
-                        <div>
-                            <strong>Official Certificate of Completion</strong>
-                            <p>Verify your updated technical competence securely on LinkedIn easily.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="check-icon">✓</span>
-                        <div>
-                            <strong>Hands-on Production Projects</strong>
-                            <p>Build, test, and ship complete live open-source application software templates.</p>
-                        </div>
-                    </li>
-                </ul>
+                <!-- Skill Card 1 -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h3>Frontend</h3> <span>6</span>
+                    </div>
+                    <div class="skill-icons">
+                        <div class="icon-box"><i class="fa-brands fa-html5" style="color: #E34F26;"></i></div>
+                        <div class="icon-box"><i class="fa-brands fa-css3-alt" style="color: #1572B6;"></i></div>
+                        <div class="icon-box"><i class="fa-brands fa-js" style="color: #F7DF1E;"></i></div>
+                        <div class="icon-box"><i class="fa-brands fa-react" style="color: #61DAFB;"></i></div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 2 -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h3>Programming Languages</h3> <span>3</span>
+                    </div>
+                    <div class="skill-icons">
+                        <div class="icon-box"><i class="fa-solid fa-c" style="color: #A8B9CC;"></i></div>
+                        <div class="icon-box"><i class="fa-brands fa-python" style="color: #3776AB;"></i></div>
+                        <div class="icon-box"><i class="fa-brands fa-js" style="color: #F7DF1E;"></i></div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 3 -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h3>Backend</h3> <span>5</span>
+                    </div>
+                    <div class="skill-icons">
+                        <div class="icon-box"><i class="fa-brands fa-node-js" style="color: #339933;"></i></div>
+                        <div class="icon-box"><i class="fa-solid fa-server" style="color: var(--text-main);"></i></div>
+                        <div class="icon-box"><i class="fa-solid fa-database" style="color: #47A248;"></i></div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 4 -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h3>DevOps & Tools</h3> <span>5</span>
+                    </div>
+                    <div class="skill-icons">
+                        <div class="icon-box"><i class="fa-brands fa-github" style="color: var(--text-main);"></i></div>
+                        <div class="icon-box"><i class="fa-brands fa-docker" style="color: #2496ED;"></i></div>
+                        <div class="icon-box"><i class="fa-brands fa-aws" style="color: #FF9900;"></i></div>
+                    </div>
+                </div>
+
             </div>
+        </section>
 
-            <div class="registration-form-card">
-                <h3 class="form-card-title">Register for a Track</h3>
-                <form class="workshop-form" action="#" method="POST">
-                    <div class="form-group">
-                        <label for="full-name">Full Name</label>
-                        <input type="text" id="full-name" name="name" placeholder="John Doe" required>
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2 class="section-title">MY EDUCATION JOURNEY</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="date"><i class="fa-solid fa-calendar"></i> 2024 - 2028 (Running Student)</span>
+                        <h3>Bachelor of Computer science and engineering </h3>
+                        <p class="institution">Metropolitan University</p>
+                        <span class="badge">DEPARTMENT OF CSE</span>
                     </div>
+                </div>
 
-                    <div class="form-group">
-                        <label for="email-addr">Email Address</label>
-                        <input type="email" id="email-addr" name="email" placeholder="john@example.com" required>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="date"><i class="fa-solid fa-calendar"></i> 2024</span>
+                        <h3>Higher Secondary Certificate</h3>
+                        <p class="institution">Sylhet Technical School and College</p>
+                        <span class="badge">SCIENCE GROUP</span>
                     </div>
+                </div>
 
-                    <div class="form-group">
-                        <label for="github-user">GitHub Handle</label>
-                        <input type="text" id="github-user" name="github" placeholder="username" required>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="date"><i class="fa-solid fa-calendar"></i> 2022</span>
+                        <h3>Secondary School Certificate</h3>
+                        <p class="institution">Sylhet Technical School and College</p>
+                        <span class="badge">SCIENCE GROUP</span>
                     </div>
+                </div>
 
-                    <div class="form-group">
-                        <label for="tech-track">Select Tech Track</label>
-                        <div class="select-wrapper">
-                            <select id="tech-track" name="track" required>
-                                <option value="" disabled selected>Choose your track...</option>
-                                <option value="ai-ml">AI / ML Track</option>
-                                <option value="cloud-devops">Cloud & DevOps Track</option>
-                                <option value="frontend">Frontend Architecture Track</option>
-                                <option value="security">Advanced Security Track</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn-form-submit">Reserve My Workshop Seat</button>
-                </form>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-top-row">
-                <div class="footer-brand">
-                    <img src="./image/footer-logo.png" alt="DEVCONF Logo" class="footer-logo">
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title">CONTACT ME</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <i class="fa-solid fa-rocket rocket-icon"></i>
+                    <h3>Let's build something <span class="accent">amazing together</span></h3>
+                    <p>Whether you have a project idea, a job opportunity, or just want to say hi — my inbox is always open.</p>
+                    <p class="response-time"><i class="fa-solid fa-bolt"></i> Typically responds within 24 hours</p>
+                    <div class="contact-socials">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
                 </div>
                 
-                <div class="footer-socials">
-                        <img src="./image/facebook-logo-preview.jpg" alt="Facebook" class="social-icon">
-                        <img src="./image/icons8-linkedin-48.png" alt="LinkedIn" class="social-icon">
-                    </a>
+                <div class="contact-form-card">
+                    <h3>Send a Message</h3>
+                    <p>Fill out the form below and I'll respond as soon as possible.</p>
+                    <form action="#">
+                        <div class="input-group">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-pen"></i>
+                            <textarea placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+                    </form>
                 </div>
             </div>
 
-            <hr class="footer-divider">
-
-            <div class="footer-bottom-row">
-                <p class="footer-copyright">&copy; 2026 DEVCONF. All rights reserved.</p>
+            <!-- Other Projects -->
+            <h3 class="other-projects-title">Other things I've built</h3>
+            <p class="other-projects-subtitle">A couple of side projects that live outside this portfolio, still running, still getting updated.</p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <span class="tag dark-tag">Notebook</span>
+                    <h4>DevNotes</h4>
+                    <p>Free, structured notes on HTML, CSS, JavaScript, React and more — written in English and বাংলা.</p>
+                    <a href="#" class="project-link">notebook.com <span>Visit ></span></a>
+                </div>
+                <div class="project-card">
+                    <span class="tag red-tag">Error Fixer</span>
+                    <h4>BugFixer</h4>
+                    <p>Tested fixes for the Next.js, Prisma, PostgreSQL and Express errors that stop you cold at 2am.</p>
+                    <a href="#" class="project-link">bugfixer.com <span>Visit ></span></a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </section>
 
+        <!-- Footer -->
+        <footer>
+            <h3 class="section-title">Reach Me Anytime</h3>
+            <div class="footer-contact">
+                <div class="footer-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+880 1741 735802</p>
+                </div>
+                <div class="footer-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>pollabdasprince@gmail.com</p>
+                </div>
+                <div class="footer-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Sylhet, Bangladesh</p>
+                </div>
+            </div>
+            <p class="copyright">© Pollab Das 2026. All Rights Reserved.</p>
+        </footer>
+    </main>
+
+    <!-- Floating Chat Button -->
+    <a href="#" class="floating-chat">
+        <i class="fa-solid fa-comment-dots"></i>
+    </a>
+
+    <!-- Theme Toggle JavaScript -->
+    <script>
+        const themeToggleBtn = document.querySelector('.theme-toggle');
+        const themeIcon = themeToggleBtn.querySelector('i');
+        const body = document.body;
+
+        // Check if light mode was previously saved
+        if (localStorage.getItem('theme') === 'light') {
+            body.classList.add('light-mode');
+            themeIcon.classList.replace('fa-sun', 'fa-moon');
+        }
+
+        // Toggle theme on button click
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            
+            if (body.classList.contains('light-mode')) {
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            } else {
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
 </body>
 </html>
